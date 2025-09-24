@@ -1,12 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="estilo.css" />
+    <script
+      src="https://kit.fontawesome.com/7ea5bdad97.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <h1>Hello, World!</h1>
-    <p>This is a sample HTML document.</p>
+    <!-- el header es la parte de arriba de la pagina que sirve como seccion de navegacion o cabecera de la pag -->
+    <header>
+      <nav id="barNav">
+        <div class="logo">Deivyd<span>Portillo</span></div>
+        <ul class="nav-link">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#experiencia">Experiencia</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- el main es para agrupar el contenido mas importante de la pag -->
+    <main>
+      <!-- el section sirve para dividir el main en secciones por temas -->
+      <section id="inicio" class="hero">
+        <div class="hero_Content" style="border: 1px solid rgb(0, 0, 0)">
+          <div class="hero_text" style="border: 1px solid rgb(0, 255, 0)">
+            <h1>DEIVYD STEVEN PORTILLO BAQUERO</h1>
+            <h2>Estudiante Analisis y Desarrollo de Software</h2>
+            <p>
+              Apasionado en el desarrollo web y creacion de nuevos proyectos.
+              Estudiante de la institucion SENA de Colombia. Curioso respecto a
+              temas de desarrollo de software, decidido a mejorar y seguir
+              aprendiendo de manera Autodidacta.
+            </p>
+            <div class="social_link">
+              <a href="https://github.com/steven-portillo" target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a href="https://www.facebook.com/deivyd.spb.2025" target="_blank"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="https://wa.me/573212442618" target="_blank"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+            </div>
+          </div>
+          <div class="hero_imagen">
+            <img src="images/foto.jpg" alt="foto perfil darth vader" />
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- el footer es para el pie de pagina la parte de abajo con derechos de autor y demas -->
+    <footer style="border: 1px solid rgb(255, 0, 0)"></footer>
   </body>
 </html>
