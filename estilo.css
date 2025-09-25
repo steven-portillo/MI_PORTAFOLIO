@@ -1,4 +1,3 @@
-/* este :root es como una variable que guarda valores de edicion que puedo usar mas adelante para no escribirlos cada vez */
 :root {
   --primary-color: #6c63ff;
   --dark-bg: #121212;
@@ -9,30 +8,25 @@
   --border-color: #2d2d2d;
   --transition: all 0.3s ease;
 }
-/* este * es un selector universal que selecciona todos los elementos del html */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-/* el html sirve para definir propiedades globales al documento ya sea tipo de letra etc... */
 html {
   scroll-behavior: smooth;
   scrollbar-color: var(--primary-color) var(--dark-bg);
 }
-/* el body es para editar todo lo que se ve en la pag, en este caso tipo de letra */
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: var(--dark-bg);
   color: var(--light-text);
   line-height: 1.6;
 }
-/* el a son los enlaces que tiene el documento */
 a {
   text-decoration: none;
   color: inherit;
 }
-/* ul son listas desordenadas */
 ul {
   list-style: none;
 }
@@ -73,11 +67,11 @@ header {
 }
 .nav-link a {
   position: relative;
-  padding: .5rem 0;
+  padding: 0.5rem 0;
   transition: var(--transition);
 }
 .nav-link a:after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -105,7 +99,7 @@ section {
   padding-bottom: 1rem;
 }
 .section-title:after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -118,7 +112,7 @@ section {
   display: inline-block;
   background-color: var(--primary-color);
   color: white;
-  padding: .8rem 1.5rem;
+  padding: 0.8rem 1.5rem;
   border-radius: 5px;
   font-weight: 600;
   transition: var(--transition);
@@ -147,7 +141,7 @@ section {
 }
 .hero-text h1 {
   font-size: 2.5rem;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   font-weight: 700;
 }
 .hero-text h2 {
@@ -165,7 +159,7 @@ section {
 .social-link {
   display: flex;
   gap: 1rem;
-  margin-top: 2rem;
+  margin-top: 0.5rem;
 }
 .social-link a {
   display: flex;
@@ -194,12 +188,12 @@ section {
   object-fit: cover;
   border-radius: 50%;
   border: 5px solid var(--primary-color);
-  box-shadow: 0 0 25px rgba(108, 99, 255, .5);
+  box-shadow: 0 0 25px rgba(108, 99, 255, 0.5);
   transition: var(--transition);
 }
 .hero-imagen img:hover {
   transform: scale(1.03);
-  box-shadow:  0 0 500px rgba(108, 99, 255, .5);
+  box-shadow: 0 0 500px rgba(108, 99, 255, 0.5);
 }
 .timeline {
   position: relative;
@@ -207,7 +201,7 @@ section {
   margin: 0 auto;
 }
 .timeline:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 20px;
@@ -221,7 +215,7 @@ section {
   padding-left: 50px;
 }
 .timeline-item:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 5px;
   left: 10px;
@@ -239,18 +233,18 @@ section {
 }
 .date {
   display: inline-block;
-  padding: .3rem .8rem;
+  padding: 0.3rem 0.8rem;
   background-color: rgba(108, 99, 255, 0.2);
   color: white;
   border-radius: 5px;
-  font-size: .9rem;
+  font-size: 0.9rem;
   margin-bottom: 1rem;
 }
-.timeline-content h3{
-  margin-bottom: .5rem;
+.timeline-content h3 {
+  margin-bottom: 0.5rem;
   font-size: 1.3rem;
 }
-.timeline-content h4{
+.timeline-content h4 {
   color: var(--gray-text);
   margin-bottom: 1rem;
   font-size: 1rem;
@@ -259,12 +253,12 @@ section {
 .skill {
   display: flex;
   flex-wrap: wrap;
-  gap: .5rem;
-  margin-top: .8rem;
+  gap: 0.5rem;
+  margin-top: 0.8rem;
 }
-.skill li{
-  font-size: .8rem;
-  padding: .3rem .8rem;
+.skill li {
+  font-size: 0.8rem;
+  padding: 0.3rem 0.8rem;
   background-color: var(--darker-bg);
   border-radius: 20px;
 }
@@ -284,7 +278,7 @@ section {
 }
 .project-card:hover {
   transform: translateY(-3px);
-  box-shadow:  0 0 500px rgba(108, 99, 255, .5);
+  box-shadow: 0 0 30px rgba(108, 99, 255, 0.5);
 }
 .project-img {
   overflow: hidden;
@@ -292,9 +286,11 @@ section {
 .project-img img {
   transition: var(--transition);
   width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 .project-card:hover .project-img img {
-  transform: scale(1.5);
+  transform: scale(1.05);
 }
 .project-info {
   padding: 1.5rem;
@@ -303,24 +299,48 @@ section {
   flex-direction: column;
 }
 .project-info h3 {
-  margin-bottom: .8rem;
+  margin-bottom: 0.8rem;
   font-size: 1.3rem;
 }
 .project-info p {
   color: var(--gray-text);
   margin-bottom: 1rem;
-  font-size: .95rem;
+  font-size: 0.95rem;
   flex-grow: 1;
 }
 .project-tech {
   display: flex;
   flex-wrap: wrap;
-  gap: .5rem;
+  gap: 0.5rem;
   margin-bottom: 1rem;
 }
 .project-tech span {
-  font-size: .8rem;
-  padding: .2rem .6rem;
+  font-size: 0.8rem;
+  padding: 0.2rem, 0.6rem;
   background-color: var(--darker-bg);
   border-radius: 20px;
+}
+.project-link {
+  display: flex;
+  gap: 2rem;
+}
+.project-link a {
+  font-size: 0.9rem;
+  color: var(--gray-text);
+  transition: var(--transition);
+}
+.project-link a:hover {
+  color: var(--primary-color);
+}
+footer {
+  background-color: var(--darker-bg);
+  border-top: 1px solid var(--border-color);
+  padding: 2rem 5%;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
 }
